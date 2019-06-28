@@ -24,7 +24,7 @@ def GET_URL(key,year):
         url = 'http://www.jra.go.jp' + html.xpath(url_xpath)[0].get("href")
         arr.append([name,url])
 
-    # array -> dataframe
+    # array -> dataframe -> csv
     df = pd.DataFrame(arr)
     df.columns = ['name', 'url']
     df.to_csv(title, header=True, index=False)
