@@ -1,0 +1,239 @@
+
+/* --------------------------------------------------
+
+	重賞レース一覧
+
+-------------------------------------------------- */
+
+
+/* - layout
+-------------------------------------------------- */
+.layout_grid {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.layout_grid > .col {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.layout_grid > .col:first-child { text-align: left; }
+/*
+.layout_grid > .col:nth-child(2){
+    width: 320px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+.layout_grid > .col:last-child { width: 150px; }
+*/
+
+.layout_grid > .col:nth-child(2){
+    text-align: right;
+    width: 450px;
+}
+
+
+/* --- タブ --- */
+ul.nav.tab.auto > li > a { padding: 12px 80px; }
+
+
+/* --- 年度選択 --- */
+div.year_select_area {
+   
+}
+
+div.year_select_area .dropdown { width: 100px; }
+
+
+/* ----- 表内の略称 ----- */
+div.year_select_area + a.btn-def {
+    margin-left: 15px;
+}
+
+
+/* ----- 表内の略称クローズボタン カスタマイズ ----- */
+.collapse-close-btn {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px dotted #ddd;
+}
+
+
+
+
+
+/* - 表
+-------------------------------------------------- */
+
+/* ----- 月日 ----- */
+table.basic tbody > tr > td.date { text-align: center; }
+
+table.basic tbody > tr > td.date > span {
+	font-size: 1.1rem;
+	display: block;
+	line-height: 1.3;
+}
+
+/* --- 土日カラー --- */
+table.basic tbody > tr > td.date > span.sun { color: #B71C1C; }
+table.basic tbody > tr > td.date > span.sat { color: #1670c9; }
+
+
+/* ----- レース名 ----- */
+table.basic tbody > tr > td.race {
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+/* ----- 競馬場 ----- */
+table.basic tbody > tr > td.place {
+	text-align: center;
+	width: 60px;
+}
+
+/* ----- 性齢 ----- */
+table.basic tbody > tr > td.age { text-align: center; }
+
+/* ----- コース ----- */
+table.basic tbody > tr > td.course { text-align: center; }
+
+table.basic tbody > tr > td.course span.type {  }
+
+/* --- メートル --- */
+table.basic tbody > tr > td.course span.unit {
+	font-size: 1rem;
+	display: block;
+	line-height: 1.2;
+}
+
+/* ----- 優勝馬 ----- */
+table.basic tbody > tr > td.winner { font-weight: bold; }
+
+/* ----- 結果リンク ----- */
+table.basic tbody > tr > td.result {
+	text-align: center;
+	width: 100px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------
+
+	979px以下
+
+------------------------------------------------------------ */
+@media screen and ( max-width : 979px ) {
+	
+    .layout_grid > .col:nth-child(2){
+        text-align: right;
+        width: 260px;
+    }
+    
+    /* --- 年度選択 --- */
+    div.year_select_area {
+        display: block;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    
+    
+    table.basic tbody > tr > td { font-size: 1.1rem; }
+    table.basic tbody > tr > td.race { font-size: 1.2rem; }
+    table.basic tbody > tr > td.jockey { font-size: 1.1rem; }
+    
+    
+}
+
+/* ------------------------------------------------------------
+
+	767px以下
+
+------------------------------------------------------------ */
+@media screen and ( max-width : 767px ) {
+	
+    
+    .layout_grid { display: block; }
+    
+    .layout_grid > .col { display: block; }
+    
+    .layout_grid > .col:nth-child(2){
+        width: auto;
+        display: block;
+        text-align: left;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    
+    /* --- タブ --- */
+    ul.nav.tab.auto > li { width: 50%; }
+    
+    ul.nav.tab.auto > li > a { padding: 12px; }
+    
+    div.year_select_area {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    
+    /* --- 年度選択 --- */
+    div.year_select_area { padding: 7px; }
+    
+    
+    /* - 表
+    ---------------------------------------------------------------------- */
+    /*div.scr { width: 100%; overflow-x: auto; }
+    div.scr > table.basic { width: 768px; }
+    
+    .src_caution { display: block; }
+    */
+}
+
+
+
+
+/* ------------------------------------------------------------
+
+	639px以下
+
+------------------------------------------------------------ */
+@media screen and ( max-width : 639px ) {
+	
+    /* --- タブ --- */
+    ul.nav.tab.auto { display: table; }
+    
+    ul.nav.tab.auto > li {
+        display: table-cell;
+        width: 50%;
+    }
+    
+    ul.nav.tab.auto > li.current > a:after {
+        display: block;
+    }
+    
+}
+
+
+/* ------------------------------------------------------------
+
+	479px以下
+
+------------------------------------------------------------ */
+@media screen and ( max-width : 479px ) {
+	
+    /* --- 年度選択 --- */
+    div.year_select_area {
+        display: block;
+        margin-bottom: 15px;
+        display: inline-block;
+        padding: 7px;
+    }
+    
+}
+
+
+
