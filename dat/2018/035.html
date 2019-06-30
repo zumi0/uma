@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="Shift_JIS">
+<title>2018年 重賞レース　JRA</title>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<link rel="stylesheet" href="/common_r/css/reset.css" />
+<link rel="stylesheet" href="/common_r/css/fonts.css" />
+<link rel="stylesheet" href="/common_r/css/font-awesome.css">
+<link rel="stylesheet" href="/common_r/css/frame_2nd.css" />
+<link rel="stylesheet" href="/common_r/css/format_2nd.css" />
+<link rel="stylesheet" href="/common_r/js/jquery.rcrumbs.css" />
+<link rel="stylesheet" href="/common_r/css/component_s.css" />
+<script src="/common/js/common2.js"></script>
+<script src="/common_r/js/jquery-1.11.0.min.js"></script>
+<script src="/common_r/js/jquery.easing.1.3.js"></script>
+<script src="/common_r/js/jquery.cookie.js"></script>
+<script src="/common_r/js/display_mode.js"></script>
+<script src="/common_r/header/js/header_menu.js"></script>
+<script src="/common_r/pagetop/js/page_top.js"></script>
+<script src="/common_r/js/anchor_scroll.js"></script>
+<script src="/common_r/js/jquery.rcrumbs.js"></script>
+<script src="/common_r/js/bread_crumbs.js"></script>
+<script src="/common_r/js/jquery.matchHeight.js"></script>
+<script src="/common/js/jstmov2.js"></script>
+<script src="http://web-cache.stream.ne.jp/web/jra/onetag/jstScript.js"></script>
+<script src="http://web-cache.stream.ne.jp/web/jra/onetag/eqScript.js"></script>
+
+<script src="/common_r/js/component_s.js"></script>
+
+<link href="/datafile/syutsuba2.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="http://web-cache.stream.ne.jp/web/jra/onetag/eqOnetag.js"></script>
+<script type="text/javascript" src="http://web-cache.stream.ne.jp/web/jra/onetag/eqScript.js"></script>
+</head>
+<body>
+<div id="wrapper">
+<div id="navigation_skip"><p><a href="#contents" tabindex="1"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>本文へ移動する</a></p></div>
+
+<div id="header">
+<div class="container">
+<div class="title_block">
+<h1><a href="/" tabindex="2"><img src="/common_r/header/img/logo_jra_2nd.png" alt="ＪＲＡ" /></a></h1>
+<p><a href="/" tabindex="3"><img src="/common_r/header/img/btn_home_2nd.png"  alt="HOME" /></a></p>
+</div><!-- /[.title_block] -->
+<div class="menu_block">
+<dl class="menu_wrapper">
+<dt class="menu_header"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i>メニュー</a></dt>
+<dd class="menu_inner">
+<div class="inner">
+<div id="global_menu">
+
+<ul>
+<li id="menu1">
+<dl>
+<dt><a href="/keiba/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_r/header/img/menu_keiba.png" alt="競馬メニュー" /><span class="sp">競馬メニュー</span><div class="current_arrow" aria-hidden="true"><img src="/common_r/header/img/pic_current-arrow.png" alt=""/></div></a></dt>
+<dd><p class="down"><a href="#"><img src="/common_r/header/img/icon_arrow_down.png" alt="メニューを開く" /></a></p><p class="up"><a href="#"><img src="/common_r/header/img/icon_arrow_up.png" alt="メニューを閉じる" /></a></p></dd>
+</dl>
+
+<ul class="sub-menu">
+<li><a href="#" onClick="doAction('/JRADB/accessI.html','pw01ide01/4F')">今週の開催お知らせ</a></li>
+<li><a href="#" onClick="doAction('/JRADB/accessD.html','pw01dli00/F3')">出馬表</a></li>
+<li><a href="/keiba/rpdf/index.html">開催場別出馬表</a></li>
+<li><a href="#" onClick="doAction('/JRADB/accessO.html','pw15oli00/6D')">オッズ</a></li>
+<li><a href="#" onClick="doAction('/JRADB/accessH.html','pw01hli00/03')">払戻金・払戻カレンダー</a></li>
+<li><a href="#" onClick="doAction('/JRADB/accessS.html','pw01sli00/AF')">レース結果</a></li>
+<li><a href="/keiba/calendar/">レーシングカレンダー</a></li>
+<li><a href="#" onClick="doAction('/JRADB/accessT.html','pw03trl00/29')">特別レース登録馬</a></li>
+<li><a href="/keiba/baba/">馬場情報</a></li>
+<li><a href="/keiba/thisweek/">今週の注目レース</a></li>
+<li><a href="/news/kaigai/index.html">海外の競馬・国際レース</a></li>
+<li><a href="/keiba/program/">競馬番組およびルール</a></li>
+<li><a href="/keiba/tokubetsu/index.html">GIレース出走馬決定順</a></li>
+<li><a href="/keiba/5dai/">5大登録</a></li>
+<li><a href="/datafile/tokubetsu/">特別レース名解説</a></li>
+<li><a href="/keiba/overseas/">海外競馬発売</a></li>
+</ul>
+</li>
+<li id="menu2">
+<dl>
+<dt><a href="/dento/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_r/header/img/menu_dento.png" alt="電話・インターネット投票" /><span class="sp">電話・インターネット投票</span><div class="current_arrow" aria-hidden="true"><img src="/common_r/header/img/pic_current-arrow.png" alt=""/></div></a></dt>
+<dd><p class="down"><a href="#"><img src="/common_r/header/img/icon_arrow_down.png" alt="メニューを開く" /></a></p><p class="up"><a href="#"><img src="/common_r/header/img/icon_arrow_up.png" alt="メニューを閉じる" /></a></p></dd>
+</dl>
+
+<ul class="sub-menu">
+<li><a href="/dento/index.html">TOPICS&amp;インフォメーション</a></li>
+<li><a href="/dento/welcome/">はじめての方へ</a></li>
+<li class="subMenu"><a href="/dento/welcome/soku/">即PAT</a></li>
+<li class="subMenu"><a href="/dento/welcome/a/">A-PAT</a></li>
+<li class="subMenu"><a href="/dento/welcome/direct/">JRAダイレクト</a></li>
+<li><a href="/dento/member/">会員の皆様へ</a></li>
+<li class="subMenu"><a href="/dento/member/manual/soku/">操作マニュアル</a></li>
+<li class="subMenu"><a href="/dento/member/nar/">地方競馬の勝馬投票券購入</a></li>
+<li class="subMenu"><a href="/dento/member/overseas/">海外競馬の勝馬投票券購入</a></li>
+<li class="subMenu"><a href="/dento/member/procedure/">各種手続き</a></li>
+</ul>
+</li>
+<li id="menu3" class="current">
+<dl>
+<dt><a href="/datafile/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_r/header/img/menu_datafile.png" alt="データファイル" /><span class="sp">データファイル</span><div class="current_arrow" aria-hidden="true"><img src="/common_r/header/img/pic_current-arrow.png" alt=""/></div></a></dt>
+<dd><p class="down"><a href="#"><img src="/common_r/header/img/icon_arrow_down.png" alt="メニューを開く" /></a></p><p class="up"><a href="#"><img src="/common_r/header/img/icon_arrow_up.png" alt="メニューを閉じる" /></a></p></dd>
+</dl>
+
+<ul class="sub-menu">
+<li><a href="/datafile/meikan/">騎手・調教師データ</a></li>
+<li><a href="/datafile/leading/">リーディング情報</a></li>
+<li><a href="#" onClick="doAction('/JRADB/accessR.html','pw02uliD19999')">競走馬検索</a></li>
+<li><a href="/datafile/seiseki/">レース成績データ</a></li>
+<li><a href="/datafile/ranking/">レーティング&amp;ランキング</a></li>
+<li><a href="/datafile/record/">中央競馬レコードタイム表</a></li>
+<li><a href="/datafile/haraimodoshi/">払戻金ランキング</a></li>
+<li><a href="/datafile/resist/">競走馬登録馬名簿・馬名意味</a></li>
+<li><a href="#" onClick="doAction('/JRADB/accessV.html','pv156liH1/98')">競走馬登録・抹消一覧</a></li>
+<li><a href="/datafile/kiroku/">達成間近な記録</a></li>
+</ul>
+
+</li>
+<li id="menu4">
+<dl>
+<dt><a href="/event/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_r/header/img/menu_event.png" alt="イベント・キャンペーン" /><span class="sp">イベント・キャンペーン</span><div class="current_arrow" aria-hidden="true"><img src="/common_r/header/img/pic_current-arrow.png" alt=""/></div></a></dt>
+<dd><p class="down"><a href="#"><img src="/common_r/header/img/icon_arrow_down.png" alt="メニューを開く" /></a></p><p class="up"><a href="#"><img src="/common_r/header/img/icon_arrow_up.png" alt="メニューを閉じる" /></a></p></dd>
+</dl>
+
+<ul class="sub-menu">
+<li><a href="/event/">イベント</a></li>
+<li class="subMenu"><a href="/event/">競馬場</a></li>
+<li class="subMenu"><a href="/event/index2.html">ウインズ</a></li>
+<li class="subMenu"><a href="/event/index3.html">パークウインズ</a></li>
+<li class="subMenu"><a href="/event/index4.html">馬とのふれあい</a></li>
+<li class="subMenu"><a href="/event/index5.html">公開調教</a></li>
+<li class="subMenu"><a href="/event/index6.html">その他</a></li>
+</ul>
+</li>
+<li id="menu5">
+<dl>
+<dt><a href="/facilities/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_r/header/img/menu_facilities.png" alt="競馬場・ウインズ等" /><span class="sp">競馬場・ウインズ等</span><div class="current_arrow" aria-hidden="true"><img src="/common_r/header/img/pic_current-arrow.png" alt=""/></div></a></dt>
+<dd><p class="down"><a href="#"><img src="/common_r/header/img/icon_arrow_down.png" alt="メニューを開く" /></a></p><p class="up"><a href="#"><img src="/common_r/header/img/icon_arrow_up.png" alt="メニューを閉じる" /></a></p></dd>
+</dl>
+
+<ul class="sub-menu">
+<li><a href="/facilities/">競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/sapporo/index.html">札幌競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/hakodate/index.html">函館競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/fukushima/index.html">福島競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/niigata/index.html">新潟競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/tokyo/index.html">東京競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/nakayama/index.html">中山競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/chukyo/index.html">中京競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/kyoto/index.html">京都競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/hanshin/index.html">阪神競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/kokura/index.html">小倉競馬場</a></li>
+<li><a href="/facilities/wins.html">ウインズ・エクセル</a></li>
+<li><a href="/card/">指定席・入場券</a></li>
+<li><a href="/facilities/j-place.html">J-PLACE</a></li>
+<li><a href="/facilities/facility.html">その他施設</a></li>
+</ul>
+</li>
+<li id="menu6">
+<dl>
+<dt><a href="/gallery/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_r/header/img/menu_gallery.png" alt="競馬ギャラリー" /><span class="sp">競馬ギャラリー</span><div class="current_arrow" aria-hidden="true"><img src="/common_r/header/img/pic_current-arrow.png" alt=""/></div></a></dt>
+<dd><p class="down"><a href="#"><img src="/common_r/header/img/icon_arrow_down.png" alt="メニューを開く" /></a></p><p class="up"><a href="#"><img src="/common_r/header/img/icon_arrow_up.png" alt="メニューを閉じる" /></a></p></dd>
+</dl>
+
+<ul class="sub-menu">
+<li><a href="/gallery/update/">アップデートムービー</a></li>
+<li><a href="/gallery/blog/">ブログ</a></li>
+<li><a href="/gallery/column/">競馬コラム</a></li>
+<li><a href="/gallery/ads/">広告ギャラリー</a></li>
+<li><a href="/kouza/yougo/">競馬用語辞典</a></li>
+<li><a href="/gallery/jrasho/">JRA賞</a></li>
+<li><a href="/gallery/dendo/">競馬の殿堂</a></li>
+<li><a href="/gallery/digital_contents/">デジタルコンテンツ</a></li>
+</ul>
+</li>
+</ul>
+
+</div><!-- /[#global_menu] -->
+<div id="header_utility">
+
+<div class="utility_menu">
+<ul>
+<li id="u_menu1"><a href="http://japanracing.jp/" target="_blank" lang="en" tabindex="4"><img src="/common_r/header/img/btn_utility_english.png" alt="ENGLISH" /><span class="sp">ENGLISH</span></a></li>
+<li id="u_menu2"><a href="/faq/" tabindex="5"><img src="/common_r/header/img/btn_utility_faq.png" alt="お問い合わせ／ＦＡＱ" /><span class="sp">お問い合わせ／ＦＡＱ</span></a></li>
+<li id="u_menu3"><a href="/sitemap/" tabindex="6"><img src="/common_r/header/img/btn_utility_sitemap.png" alt="サイトマップ" /><span class="sp">サイトマップ</span></a></li>
+</ul>
+</div><!-- /[.utility_menu] -->
+</div><!-- /[#header_utility] -->
+<div class="close"><p class="btn"><a href="#"><i class="fa fa-times"></i>閉じる</a></p></div><!-- /[.close] -->
+</div><!-- /[.inner] -->
+</dd>
+</dl>
+<div id="search_block">
+<div class="search_box">
+<form action="/search/top/index.html" method="get" id="gs_top" name="gs_top" onSubmit="search_submit();" accept-charset="UTF-8">
+<input type="text" name="q" id="textfield" value="" title="サイト内検索" tabindex="7"  />
+<input type="image" class="image" name="btnG" src="/common_r/header/img/btn_search.png" alt="サイト内検索" width="70" height="20" id="searchBtn" tabindex="8" />
+<input type="hidden" value="013573258035501089784:4kcjqh-n9f8" name="cx">
+<input type="hidden" value="UTF-8" name="ie">
+</form>
+</div>
+<!-- /[search box] -->
+</div><!-- /[#search_block] -->
+
+</div><!-- /[.menu_block] -->
+</div><!-- /[.container] -->
+</div><!-- /[#header] -->
+
+<div id="contents">
+<div class="bread_crumb">
+<div class="content rcrumbs">
+<ul>
+<li><a href="/">ホーム</a>&gt;</li>
+<li><a href="/datafile/">データファイル</a>&gt;</li>
+<li><a href="/datafile/seiseki/">レース成績データ</a>&gt;</li>
+<li><a href="/datafile/seiseki/replay/2018/jyusyo.html">2018年 重賞レース一覧</a>&gt;</li>
+<li class="current"><a href="/datafile/seiseki/replay/2018/035.html">2018年 マーチステークス</a></li>
+</ul>
+</div>
+</div><!-- /[.bread_crumb] -->
+
+<div id="contentsBody">
+
+<div class="contents_header mt10"><h2>2018年3月25日（日曜） 3回中山2日</h2></div>
+
+<div class="block_header mt10"><div class="content"><h3>11R 第25回 マーチステークス<span class="grdTtl"><img src="/JRADB/img/keiba/icon_g3_ttl.gif" alt="G&#8546;" class="gradeIconImageTtl"></span></h3></div></div>
+
+
+<div class="raceInfoAreaOutDiv">
+  <div class="raceInfoAreaLeftDiv">
+    <div class="raceInfoRowDiv1">
+      <div class="raceSyubetsu">サラ系4歳以上</div>
+
+        <div class="raceKyoriTrack">コース&nbsp;1800m　ダート・右</div>
+
+    </div>
+    <div class="raceInfoRowDiv2">
+      <div class="raceJoken">（国際）（指定）      オープン</div>
+      <div class="raceJuryou">ハンデ</div>
+    </div>
+    <div class="raceInfoRowDiv3">
+      <div class="raceShokin">
+        <table class="shokinTable">
+          <tr>
+            <td>本賞金（万円）：</td><td class="amt">3600</td><td class="delimiter">、</td><td class="amt">1400</td><td class="delimiter">、</td><td class="amt">900</td><td class="delimiter">、</td><td class="amt">540</td><td class="delimiter">、</td><td class="amt">360</td>
+          </tr>
+          <tr>
+            <td>付加賞（万円）：</td><td class="amt">58.8</td><td class="delimiter">、</td><td class="amt">16.8</td><td class="delimiter">、</td><td class="amt">8.4</td>
+          </tr>
+        </table>
+      </div>
+      <div class="raceHassouTenkou">
+        <div class="raceHassouTenkouInner">
+          <div class="raceHassouTenkouRow">
+            <div class="raceHassou">発走  15:30</div>
+          </div>
+          <div class="raceHassouTenkouRow">
+            <div class="raceTenkou">天候：晴　 　ダート：良 </div>
+          </div>
+        </div>
+      </div>
+      <div class="raceInfoBlank"><br></div>
+    </div>
+  </div>
+  <div class="raceInfoAreaRightDiv">
+
+    <table class="videoslinks">
+
+      <tr>
+        <td>
+          <div class="racevideoLeft"><img src="/JRADB/img/keiba/se_race.gif" alt="レース映像" class="seRaceImage"></div>
+
+          <div class="racevideoRight">
+
+<script>eqPlayerButton('201803060211');</script>
+
+          </div>
+
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+</div>
+
+<table class="mainList">
+  <tr>
+    <th scope="col" class="chakuCol">着順</th>
+    <th scope="col" class="wakuCol">枠</th>
+    <th scope="col" class="umabanCol">馬番</th>
+    <th scope="col" class="umameiCol">馬名</th>
+    <th scope="col" class="seireiCol">性齢</th>
+    <th scope="col" class="hutanCol">負担重量</th>
+    <th scope="col" colspan="2">騎手</th>
+    <th scope="col" class="timeCol">タイム</th>
+    <th scope="col" class="chakusaCol">着差</th>
+
+    <th scope="col" class="suiteiCol">推定上り</th>
+
+    <th scope="col" colspan="2">馬体重</th>
+    <th scope="col" class="choukyoCol">調教師</th>
+    <th scope="col" class="ninkiCol">単勝人気</th>
+  </tr>
+
+  <tr class="oddRow">
+    <td class="chakuCol">  1</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku4.gif" alt="枠4青" class="iconWakuImage"></td>
+    <td class="umabanCol">  8</td>
+
+    <td class="umameiCol">センチュリオン</td>
+
+    <td class="seireiCol">牡6</td>
+    <td class="hutanCol">57.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+幸英明</td>
+
+    <td class="timeCol">1:52.1</td>
+    <td class="chakusaCol"></td>
+    <td class="suiteiCol">37.6</td>
+    <td class="bataiCol">536</td>
+    <td class="zougenCol"> 0</td>
+    <td class="choukyoCol">
+
+田村康仁</td>
+
+    <td class="ninkiCol">2</td>
+  </tr>
+
+  <tr class="evenRow">
+    <td class="chakuCol">  2</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku7.gif" alt="枠7橙" class="iconWakuImage"></td>
+    <td class="umabanCol"> 14</td>
+
+    <td class="umameiCol">クインズサターン</td>
+
+    <td class="seireiCol">牡5</td>
+    <td class="hutanCol">55.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+津村明秀</td>
+
+    <td class="timeCol">1:52.1</td>
+    <td class="chakusaCol">ハナ</td>
+    <td class="suiteiCol">37.4</td>
+    <td class="bataiCol">478</td>
+    <td class="zougenCol">-2</td>
+    <td class="choukyoCol">
+
+野中賢二</td>
+
+    <td class="ninkiCol">5</td>
+  </tr>
+
+  <tr class="oddRow">
+    <td class="chakuCol">  3</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku2.gif" alt="枠2黒" class="iconWakuImage"></td>
+    <td class="umabanCol">  4</td>
+
+    <td class="umameiCol"><img src="/JRADB/img/keiba/kigo_6.gif" alt="カクチ" class="umaIconImage">ロワジャルダン</td>
+
+    <td class="seireiCol">牡7</td>
+    <td class="hutanCol">56.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+真島大輔</td>
+
+    <td class="timeCol">1:52.2</td>
+    <td class="chakusaCol">３／４</td>
+    <td class="suiteiCol">37.7</td>
+    <td class="bataiCol">494</td>
+    <td class="zougenCol">-22</td>
+    <td class="choukyoCol">
+
+荒山勝徳</td>
+
+    <td class="ninkiCol">10</td>
+  </tr>
+
+  <tr class="evenRow">
+    <td class="chakuCol">  4</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku6.gif" alt="枠6緑" class="iconWakuImage"></td>
+    <td class="umabanCol"> 12</td>
+
+    <td class="umameiCol">アルタイル</td>
+
+    <td class="seireiCol">牡6</td>
+    <td class="hutanCol">57.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+田中勝春</td>
+
+    <td class="timeCol">1:52.2</td>
+    <td class="chakusaCol">アタマ</td>
+    <td class="suiteiCol">37.5</td>
+    <td class="bataiCol">492</td>
+    <td class="zougenCol">-2</td>
+    <td class="choukyoCol">
+
+手塚貴久</td>
+
+    <td class="ninkiCol">6</td>
+  </tr>
+
+  <tr class="oddRow">
+    <td class="chakuCol">  5</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku5.gif" alt="枠5黄" class="iconWakuImage"></td>
+    <td class="umabanCol"> 10</td>
+
+    <td class="umameiCol">コスモカナディアン</td>
+
+    <td class="seireiCol">牡5</td>
+    <td class="hutanCol">56.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+柴田大知</td>
+
+    <td class="timeCol">1:52.4</td>
+    <td class="chakusaCol">３／４</td>
+    <td class="suiteiCol">37.8</td>
+    <td class="bataiCol">490</td>
+    <td class="zougenCol">-6</td>
+    <td class="choukyoCol">
+
+金成貴史</td>
+
+    <td class="ninkiCol">8</td>
+  </tr>
+
+  <tr class="evenRow">
+    <td class="chakuCol">  6</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku8.gif" alt="枠8桃" class="iconWakuImage"></td>
+    <td class="umabanCol"> 15</td>
+
+    <td class="umameiCol">ロンドンタウン</td>
+
+    <td class="seireiCol">牡5</td>
+    <td class="hutanCol">57.5</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+松岡正海</td>
+
+    <td class="timeCol">1:52.6</td>
+    <td class="chakusaCol">１ 1/2</td>
+    <td class="suiteiCol">37.6</td>
+    <td class="bataiCol">522</td>
+    <td class="zougenCol"> 0</td>
+    <td class="choukyoCol">
+
+牧田和弥</td>
+
+    <td class="ninkiCol">7</td>
+  </tr>
+
+  <tr class="oddRow">
+    <td class="chakuCol">  7</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku4.gif" alt="枠4青" class="iconWakuImage"></td>
+    <td class="umabanCol">  7</td>
+
+    <td class="umameiCol">ディアデルレイ</td>
+
+    <td class="seireiCol">牡7</td>
+    <td class="hutanCol">57.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+勝浦正樹</td>
+
+    <td class="timeCol">1:52.8</td>
+    <td class="chakusaCol">３／４</td>
+    <td class="suiteiCol">38.5</td>
+    <td class="bataiCol">508</td>
+    <td class="zougenCol">+4</td>
+    <td class="choukyoCol">
+
+牧光二</td>
+
+    <td class="ninkiCol">4</td>
+  </tr>
+
+  <tr class="evenRow">
+    <td class="chakuCol">  8</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku3.gif" alt="枠3赤" class="iconWakuImage"></td>
+    <td class="umabanCol">  5</td>
+
+    <td class="umameiCol">サクラルコール</td>
+
+    <td class="seireiCol">牡7</td>
+    <td class="hutanCol">53.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+柴田善臣</td>
+
+    <td class="timeCol">1:52.9</td>
+    <td class="chakusaCol">３／４</td>
+    <td class="suiteiCol">37.9</td>
+    <td class="bataiCol">494</td>
+    <td class="zougenCol">-2</td>
+    <td class="choukyoCol">
+
+田島俊明</td>
+
+    <td class="ninkiCol">9</td>
+  </tr>
+
+  <tr class="oddRow">
+    <td class="chakuCol">  9</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku7.gif" alt="枠7橙" class="iconWakuImage"></td>
+    <td class="umabanCol"> 13</td>
+
+    <td class="umameiCol">ハイランドピーク</td>
+
+    <td class="seireiCol">牡4</td>
+    <td class="hutanCol">55.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+横山典弘</td>
+
+    <td class="timeCol">1:53.0</td>
+    <td class="chakusaCol">クビ</td>
+    <td class="suiteiCol">36.9</td>
+    <td class="bataiCol">468</td>
+    <td class="zougenCol"> 0</td>
+    <td class="choukyoCol">
+
+土田稔</td>
+
+    <td class="ninkiCol">1</td>
+  </tr>
+
+  <tr class="evenRow">
+    <td class="chakuCol"> 10</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku2.gif" alt="枠2黒" class="iconWakuImage"></td>
+    <td class="umabanCol">  3</td>
+
+    <td class="umameiCol">サンマルデューク</td>
+
+    <td class="seireiCol">牡9</td>
+    <td class="hutanCol">55.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+蛯名正義</td>
+
+    <td class="timeCol">1:53.1</td>
+    <td class="chakusaCol">１／２</td>
+    <td class="suiteiCol">36.9</td>
+    <td class="bataiCol">510</td>
+    <td class="zougenCol">-2</td>
+    <td class="choukyoCol">
+
+和田勇介</td>
+
+    <td class="ninkiCol">13</td>
+  </tr>
+
+  <tr class="oddRow">
+    <td class="chakuCol"> 11</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku8.gif" alt="枠8桃" class="iconWakuImage"></td>
+    <td class="umabanCol"> 16</td>
+
+    <td class="umameiCol">オールブラッシュ</td>
+
+    <td class="seireiCol">牡6</td>
+    <td class="hutanCol">58.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+石橋脩</td>
+
+    <td class="timeCol">1:53.2</td>
+    <td class="chakusaCol">１／２</td>
+    <td class="suiteiCol">37.9</td>
+    <td class="bataiCol">488</td>
+    <td class="zougenCol">-12</td>
+    <td class="choukyoCol">
+
+村山明</td>
+
+    <td class="ninkiCol">12</td>
+  </tr>
+
+  <tr class="evenRow">
+    <td class="chakuCol"> 12</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku1.gif" alt="枠1白" class="iconWakuImage"></td>
+    <td class="umabanCol">  1</td>
+
+    <td class="umameiCol">ブレスアロット</td>
+
+    <td class="seireiCol">牡5</td>
+    <td class="hutanCol">53.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+丹内祐次</td>
+
+    <td class="timeCol">1:53.6</td>
+    <td class="chakusaCol">２ 1/2</td>
+    <td class="suiteiCol">38.8</td>
+    <td class="bataiCol">468</td>
+    <td class="zougenCol">-2</td>
+    <td class="choukyoCol">
+
+高柳瑞樹</td>
+
+    <td class="ninkiCol">15</td>
+  </tr>
+
+  <tr class="oddRow">
+    <td class="chakuCol"> 13</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku3.gif" alt="枠3赤" class="iconWakuImage"></td>
+    <td class="umabanCol">  6</td>
+
+    <td class="umameiCol">ジョルジュサンク</td>
+
+    <td class="seireiCol">牡5</td>
+    <td class="hutanCol">54.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+藤岡康太</td>
+
+    <td class="timeCol">1:53.7</td>
+    <td class="chakusaCol">１／２</td>
+    <td class="suiteiCol">38.7</td>
+    <td class="bataiCol">526</td>
+    <td class="zougenCol">-4</td>
+    <td class="choukyoCol">
+
+鮫島一歩</td>
+
+    <td class="ninkiCol">14</td>
+  </tr>
+
+  <tr class="evenRow">
+    <td class="chakuCol"> 14</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku5.gif" alt="枠5黄" class="iconWakuImage"></td>
+    <td class="umabanCol">  9</td>
+
+    <td class="umameiCol">エピカリス</td>
+
+    <td class="seireiCol">牡4</td>
+    <td class="hutanCol">56.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+Ｃ．ルメール</td>
+
+    <td class="timeCol">1:53.8</td>
+    <td class="chakusaCol">１／２</td>
+    <td class="suiteiCol">39.5</td>
+    <td class="bataiCol">496</td>
+    <td class="zougenCol">-8</td>
+    <td class="choukyoCol">
+
+萩原清</td>
+
+    <td class="ninkiCol">3</td>
+  </tr>
+
+  <tr class="oddRow">
+    <td class="chakuCol"> 15</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku1.gif" alt="枠1白" class="iconWakuImage"></td>
+    <td class="umabanCol">  2</td>
+
+    <td class="umameiCol">ストロングサウザー</td>
+
+    <td class="seireiCol">牡7</td>
+    <td class="hutanCol">55.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+木幡巧也</td>
+
+    <td class="timeCol">1:53.9</td>
+    <td class="chakusaCol">３／４</td>
+    <td class="suiteiCol">38.7</td>
+    <td class="bataiCol">480</td>
+    <td class="zougenCol"> 0</td>
+    <td class="choukyoCol">
+
+久保田貴士</td>
+
+    <td class="ninkiCol">16</td>
+  </tr>
+
+  <tr class="evenRow">
+    <td class="chakuCol"> 16</td>
+    <td class="wakuCol"><img src="/JRADB/img/keiba/waku6.gif" alt="枠6緑" class="iconWakuImage"></td>
+    <td class="umabanCol"> 11</td>
+
+    <td class="umameiCol">メイショウウタゲ</td>
+
+    <td class="seireiCol">牡7</td>
+    <td class="hutanCol">57.0</td>
+    <td class="kigouCol"></td>
+    <td class="jocCol">
+
+内田博幸</td>
+
+    <td class="timeCol">1:54.1</td>
+    <td class="chakusaCol">３／４</td>
+    <td class="suiteiCol">39.1</td>
+    <td class="bataiCol">512</td>
+    <td class="zougenCol"> 0</td>
+    <td class="choukyoCol">
+
+安達昭夫</td>
+
+    <td class="ninkiCol">11</td>
+  </tr>
+
+</table>
+
+
+<table class="timeList">
+  <caption>タイム</caption>
+
+  <tr>
+    <th scope="row">ハロンタイム</th>
+    <td>12.4 - 11.5 - 12.5 - 12.9 - 12.4 - 12.6 - 12.6 - 12.4 - 12.8</td>
+  </tr>
+
+  <tr>
+    <th scope="row">上り</th>
+    <td>4F  50.4 - 3F  37.8</td>
+  </tr>
+
+</table>
+
+
+<table class="cornerJuniList">
+  <caption>コーナー通過順位</caption>
+
+  <tr>
+    <th scope="row">1コーナー</th>
+    <td>(*7,9)-4,<strong>8</strong>,1,10(5,12)(14,15)(2,6,16)-11-13,3 </td>
+  </tr>
+
+  <tr>
+    <th scope="row">2コーナー</th>
+    <td>(*7,9)-4,<strong>8</strong>(1,10)(5,12)14,15(2,6,16)-11=13,3 </td>
+  </tr>
+
+  <tr>
+    <th scope="row">3コーナー</th>
+    <td>(*7,9)(4,10,<strong>8</strong>)(1,14,12)(5,6,15,11)2,16=(13,3) </td>
+  </tr>
+
+  <tr>
+    <th scope="row">4コーナー</th>
+    <td>(*7,9)<strong>8</strong>(4,10,12)(1,14)(6,15,11)5(2,16)(13,3) </td>
+  </tr>
+
+</table>
+
+
+<div class="haraimodoshiListTitle">払戻金</div>
+<div class="haraimodoshiOutDiv">
+  <div class="haraimodoshiCellDiv">
+    <table class="haraimodoshiList">
+      <tr>
+        <th scope="row">単勝</th>
+        <td class="umabanCol singleCell">8</td>
+        <td class="haraimodoshiCol singleCell">610円</td>
+        <td class="ninkiCol singleCell">2番人気</td>
+      </tr>
+      <tr>
+        <th rowspan="3" scope="row">複勝</th>
+        <td class="umabanCol compositeCellTop">8</td>
+        <td class="haraimodoshiCol compositeCellTop">190円</td>
+        <td class="ninkiCol compositeCellTop">2番人気</td>
+      </tr>
+      <tr>
+        <td class="umabanCol compositeCellMiddle">14</td>
+        <td class="haraimodoshiCol compositeCellMiddle">310円</td>
+        <td class="ninkiCol compositeCellMiddle">3番人気</td>
+      </tr>
+      <tr>
+        <td class="umabanCol compositeCellBottom">4</td>
+        <td class="haraimodoshiCol compositeCellBottom">870円</td>
+        <td class="ninkiCol compositeCellBottom">10番人気</td>
+      </tr>
+      <tr>
+        <th scope="row">枠連</th>
+        <td class="umabanCol singleCell">4-7</td>
+        <td class="haraimodoshiCol singleCell">400円</td>
+        <td class="ninkiCol singleCell">1番人気</td>
+      </tr>
+    </table>
+  </div>
+  <div class="haraimodoshiCellDiv">
+    <table class="haraimodoshiList">
+      <tr>
+        <th scope="row">馬連</th>
+        <td class="umabanCol singleCell">8-14</td>
+        <td class="haraimodoshiCol singleCell">2,540円</td>
+        <td class="ninkiCol singleCell">11番人気</td>
+      </tr>
+      <tr>
+        <th rowspan="3" scope="row">ワイド</th>
+        <td class="umabanCol compositeCellTop">8-14</td>
+        <td class="haraimodoshiCol compositeCellTop">830円</td>
+        <td class="ninkiCol compositeCellTop">8番人気</td>
+      </tr>
+      <tr>
+        <td class="umabanCol compositeCellMiddle">4-8</td>
+        <td class="haraimodoshiCol compositeCellMiddle">2,520円</td>
+        <td class="ninkiCol compositeCellMiddle">28番人気</td>
+      </tr>
+      <tr>
+        <td class="umabanCol compositeCellBottom">4-14</td>
+        <td class="haraimodoshiCol compositeCellBottom">5,460円</td>
+        <td class="ninkiCol compositeCellBottom">49番人気</td>
+      </tr>
+    </table>
+  </div>
+  <div class="haraimodoshiCellDiv">
+    <table class="haraimodoshiList">
+      <tr>
+        <th scope="row">馬単</th>
+        <td class="umabanCol singleCell">8-14</td>
+        <td class="haraimodoshiCol singleCell">5,090円</td>
+        <td class="ninkiCol singleCell">16番人気</td>
+      </tr>
+      <tr>
+        <th scope="row">３連複</th>
+        <td class="umabanCol singleCell">4-8-14</td>
+        <td class="haraimodoshiCol singleCell">29,020円</td>
+        <td class="ninkiCol singleCell">86番人気</td>
+      </tr>
+      <tr>
+        <th scope="row">３連単</th>
+        <td class="umabanCol singleCell">8-14-4</td>
+        <td class="haraimodoshiCol singleCell">153,570円</td>
+        <td class="ninkiCol singleCell">413番人気</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="photoAreaOutDiv">
+
+  <div class="photoAreaRowDiv">
+    <div class="photoAreaCellDiv"><span class="clearPhotoL"></span><img src="/JRADB/jpg/2018/06/201803060211A.jpg" alt="ゴール前写真" class="photoImageL"></div>
+  </div>
+
+</div>
+
+
+
+
+</div><!-- /[contentsBody] -->
+</div><!-- /[contents] -->
+<div id="footer">
+<div class="container">
+<div class="icon"></div>
+<div class="content">
+<div class="copyright">Copyright &copy; Japan Racing Association All rights reserved.</div>
+</div><!-- /[.content] -->
+</div><!-- /[.container] -->
+</div><!-- /[#footer] -->
+</div><!-- /[wrapper] -->
+<form id="commForm01" method="POST" enctype="application/x-www-form-urlencoded" style="margin-top:0em; margin-bottom:0em">
+<input type="hidden" id="cname" name="cname" >
+</form>
+<form id="commFormSearch" method="POST" enctype="application/x-www-form-urlencoded" style="margin-top:0em; margin-bottom:0em">
+<input type="hidden" id="cnameSearch" name="CNAME" >
+<input type="hidden" id="expire" name="EXPIRE" >
+<input type="hidden" id="parm" name="xW02" >
+</form>
+</body>
+</html>
