@@ -1,0 +1,970 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="Shift_JIS">
+<title>2019年 デイリー杯クイーンカップ　JRA</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="/common_d/css/reset.css" />
+<link rel="stylesheet" href="/common_d/css/fonts.css" />
+<link rel="stylesheet" href="/common_d/css/font-awesome.css">
+<link rel="stylesheet" href="/common_d/css/frame.css" />
+<link rel="stylesheet" href="/common_d/css/component_d.css" />
+<link rel="stylesheet" href="/common_d/js/jquery.rcrumbs.css" />
+<link rel="stylesheet" href="/datafile/seiseki/css/db_race_result.css">
+<!--<link rel="stylesheet" href="/datafile/seiseki/g1/css/result.css">-->
+<link rel="stylesheet" href="/datafile/seiseki/replay/css/result.css">
+<script src="/common/js/common2.js"></script>
+<script src="/common_d/js/jquery-1.11.0.min.js"></script>
+<script src="/common_d/js/jquery.easing.1.3.js"></script>
+<script src="/common_d/js/jquery.cookie.js"></script>
+<script src="http://web-cache.stream.ne.jp/web/jra/onetag/jstScript.js"></script>
+<script src="http://web-cache.stream.ne.jp/web/jra/onetag/eqScript.js"></script>
+<script src="/common_d/header/js/header_menu.js"></script>
+<script src="/common_d/pagetop/js/page_top.js"></script>
+<script src="/common_d/js/anchor_scroll.js"></script>
+<script src="/common_d/js/jquery.rcrumbs.js"></script>
+<script src="/common_d/js/bread_crumbs.js"></script>
+<script src="/common_d/js/jquery.matchHeight.js"></script>
+<script src="/common_d/js/component_d.js"></script>
+
+
+</head>
+
+<body>
+<div id="wrapper">
+<div id="navigation_skip"><p><a href="#contents" tabindex="1"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i>本文へ移動する</a></p></div>
+
+<div id="header">
+<div class="container">
+<div class="title_block">
+<h1><a href="/"><img src="/common_d/header/img/logo_jra_2nd.png" alt="JRA" /></a></h1>
+<p><a href="/"><img src="/common_d/header/img/btn_home_2nd.png"  alt="HOME" /></a></p>
+</div><!-- /[.title_block] -->
+
+<div class="menu_block">
+<div id="header_utility">
+
+<div class="utility_menu">
+<ul>
+<li id="u_menu1"><a href="http://japanracing.jp/" target="_blank" lang="en"><img src="/common_d/header/img/btn_utility_english.png" alt="ENGLISH" /></a></li>
+<li id="u_menu2"><a href="/faq/"><img src="/common_d/header/img/btn_utility_faq.png" alt="お問い合わせ／FAQ" /></a></li>
+<li id="u_menu3"><a href="/sitemap/"><img src="/common_d/header/img/btn_utility_sitemap.png" alt="サイトマップ" /></a></li>
+</ul>
+</div><!-- /[.utility_menu] -->
+</div><!-- /[#header_utility] -->
+<div id="search_block">
+<div class="search_box">
+<form action="/search/top/index.html" method="get" id="gs_top" name="gs_top" onSubmit="search_submit();" accept-charset="UTF-8">
+<input type="text" name="q" id="textfield" value="" title="サイト内検索"  />
+<input type="image" class="image" name="btnG" src="/common_d/header/img/btn_search.png" alt="サイト内検索" width="70" height="20" id="searchBtn" />
+<input type="hidden" value="013573258035501089784:4kcjqh-n9f8" name="cx">
+<input type="hidden" value="UTF-8" name="ie">
+</form>
+</div>
+<!-- /[search box] -->
+</div><!-- /[#search_block] -->
+
+<div id="global_menu">
+
+<ul>
+<li id="menu1">
+<a href="/keiba/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_d/header/img/menu_keiba.png" alt="競馬メニュー" /><div class="current_arrow" aria-hidden="true"><img src="/common_d/header/img/pic_current-arrow.png" alt=""/></div></a>
+
+<ul class="sub-menu">
+<li><a href="#" onclick="doAction('/JRADB/accessI.html','pw01ide01/4F')">今週の開催お知らせ</a></li>
+<li><a href="#" onclick="doAction('/JRADB/accessD.html','pw01dli00/F3')">出馬表</a></li>
+<li><a href="/keiba/rpdf/index.html">開催場別出馬表</a></li>
+<li><a href="#" onclick="doAction('/JRADB/accessO.html','pw15oli00/6D')">オッズ</a></li>
+<li><a href="#" onclick="doAction('/JRADB/accessH.html','pw01hli00/03')">払戻金・払戻カレンダー</a></li>
+<li><a href="#" onclick="doAction('/JRADB/accessS.html','pw01sli00/AF')">レース結果</a></li>
+<li><a href="/keiba/calendar/">レーシングカレンダー</a></li>
+<li><a href="#" onclick="doAction('/JRADB/accessT.html','pw03trl00/29')">特別レース登録馬</a></li>
+<li><a href="/keiba/baba/">馬場情報</a></li>
+<li><a href="/keiba/thisweek/">今週の注目レース</a></li>
+<li><a href="/news/kaigai/index.html">海外の競馬・国際レース</a></li>
+<li><a href="/keiba/program/">競馬番組およびルール</a></li>
+<li><a href="/keiba/tokubetsu/index.html">GIレース出走馬決定順</a></li>
+<li><a href="/keiba/5dai/">5大登録</a></li>
+<li><a href="/datafile/tokubetsu/">特別レース名解説</a></li>
+<li><a href="/keiba/overseas/">海外競馬発売</a></li>
+</ul>
+</li>
+<li id="menu2">
+<a href="/dento/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_d/header/img/menu_dento.png" alt="電話・インターネット投票" /><div class="current_arrow" aria-hidden="true"><img src="/common_d/header/img/pic_current-arrow.png" alt=""/></div></a>
+
+<ul class="sub-menu">
+<li><a href="/dento/index.html">TOPICS&amp;インフォメーション</a></li>
+<li><a href="/dento/welcome/">はじめての方へ</a></li>
+<li class="subMenu"><a href="/dento/welcome/soku/">即PAT</a></li>
+<li class="subMenu"><a href="/dento/welcome/a/">A-PAT</a></li>
+<li class="subMenu"><a href="/dento/welcome/direct/">JRAダイレクト</a></li>
+<li><a href="/dento/member/">会員の皆様へ</a></li>
+<li class="subMenu"><a href="/dento/member/manual/soku/">操作マニュアル</a></li>
+<li class="subMenu"><a href="/dento/member/nar/">地方競馬の勝馬投票券購入</a></li>
+<li class="subMenu"><a href="/dento/member/overseas/">海外競馬の勝馬投票券購入</a></li>
+<li class="subMenu"><a href="/dento/member/procedure/">各種手続き</a></li>
+</ul>
+</li>
+<li id="menu3" class="current">
+<a href="/datafile/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_d/header/img/menu_datafile.png" alt="データファイル" /><div class="current_arrow" aria-hidden="true"><img src="/common_d/header/img/pic_current-arrow.png" alt=""/></div></a>
+
+<ul class="sub-menu">
+<li><a href="/datafile/meikan/">騎手・調教師データ</a></li>
+<li><a href="/datafile/leading/">リーディング情報</a></li>
+<li><a href="#" onclick="doAction('/JRADB/accessR.html','pw02uliD19999')">競走馬検索</a></li>
+<li><a href="/datafile/seiseki/">レース成績データ</a></li>
+<li><a href="/datafile/ranking/">レーティング&amp;ランキング</a></li>
+<li><a href="/datafile/record/">中央競馬レコードタイム表</a></li>
+<li><a href="/datafile/haraimodoshi/">払戻金ランキング</a></li>
+<li><a href="/datafile/resist/">競走馬登録馬名簿・馬名意味</a></li>
+<li><a href="#" onclick="doAction('/JRADB/accessV.html','pv156liH1/98')">競走馬登録・抹消一覧</a></li>
+<li><a href="/datafile/kiroku/">達成間近な記録</a></li>
+</ul>
+
+</li>
+<li id="menu4">
+<a href="/event/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_d/header/img/menu_event.png" alt="イベント・キャンペーン" /><div class="current_arrow" aria-hidden="true"><img src="/common_d/header/img/pic_current-arrow.png" alt=""/></div></a>
+
+<ul class="sub-menu">
+<li><a href="/event/">イベント</a></li>
+<li class="subMenu"><a href="/event/">競馬場</a></li>
+<li class="subMenu"><a href="/event/index2.html">ウインズ</a></li>
+<li class="subMenu"><a href="/event/index3.html">パークウインズ</a></li>
+<li class="subMenu"><a href="/event/index4.html">馬とのふれあい</a></li>
+<li class="subMenu"><a href="/event/index5.html">公開調教</a></li>
+<li class="subMenu"><a href="/event/index6.html">その他</a></li>
+</ul>
+</li>
+<li id="menu5">
+<a href="/facilities/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_d/header/img/menu_facilities.png" alt="競馬場・ウインズ等" /><div class="current_arrow" aria-hidden="true"><img src="/common_d/header/img/pic_current-arrow.png" alt=""/></div></a>
+
+<ul class="sub-menu">
+<li><a href="/facilities/">競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/sapporo/index.html">札幌競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/hakodate/index.html">函館競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/fukushima/index.html">福島競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/niigata/index.html">新潟競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/tokyo/index.html">東京競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/nakayama/index.html">中山競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/chukyo/index.html">中京競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/kyoto/index.html">京都競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/hanshin/index.html">阪神競馬場</a></li>
+<li class="subMenu"><a href="/facilities/race/kokura/index.html">小倉競馬場</a></li>
+<li><a href="/facilities/wins.html">ウインズ・エクセル</a></li>
+<li><a href="/card/">指定席・入場券</a></li>
+<li><a href="/facilities/j-place.html">J-PLACE</a></li>
+<li><a href="/facilities/facility.html">その他施設</a></li>
+</ul>
+</li>
+<li id="menu6">
+<a href="/gallery/"><i class="fa fa-caret-right" aria-hidden="true"></i><img src="/common_d/header/img/menu_gallery.png" alt="競馬ギャラリー" /><div class="current_arrow" aria-hidden="true"><img src="/common_d/header/img/pic_current-arrow.png" alt=""/></div></a>
+
+<ul class="sub-menu">
+<li><a href="/gallery/update/">アップデートムービー</a></li>
+<li><a href="/gallery/blog/">ブログ</a></li>
+<li><a href="/gallery/column/">競馬コラム</a></li>
+<li><a href="/gallery/ads/">広告ギャラリー</a></li>
+<li><a href="/kouza/yougo/">競馬用語辞典</a></li>
+<li><a href="/gallery/jrasho/">JRA賞</a></li>
+<li><a href="/gallery/dendo/">競馬の殿堂</a></li>
+<li><a href="/gallery/digital_contents/">デジタルコンテンツ</a></li>
+</ul>
+</li>
+</ul>
+
+</div><!-- /[#global_menu] -->
+</div><!-- /[.menu_block] -->
+</div><!-- /[.container] -->
+</div><!-- /[#header] -->
+
+<div id="contents">
+
+<div class="bread_crumb">
+<div class="content">
+<ul>
+<li><a href="/">ホーム</a><span class="divider">&gt;</span></li>
+<li><a href="/datafile/">データファイル</a><span class="divider">&gt;</span></li>
+<li><a href="/datafile/seiseki/">レース成績データ</a><span class="divider">&gt;</span></li>
+<li><a href="/datafile/seiseki/replay/2019/jyusyo.html">2019年 重賞レース一覧</a><span class="divider">&gt;</span></li>
+<li class="current">2019年 クイーンカップ</li>
+</ul>
+</div>
+</div><!-- /[.bread_crumb] -->
+
+<div class="header_line">
+<div class="content">
+<h1><span class="inner">
+<span class="icon"><img src="/datafile/_img/icon_seiseki.png" alt="レース成績データのアイコン"></span>
+<span class="txt"><span class="opt">2019年 重賞レース一覧</span>デイリー杯クイーンカップ</span>
+</span>
+</h1>
+</div>
+</div>
+
+<div id="contentsBody">
+
+<div id="race_result">
+
+<div class="race_result_unit">
+
+
+<!-- 競走結果 貼り付け ここから -->
+            <table class="basic narrow-xy striped">
+              <caption>
+                <div class="race_header">
+                  <div class="left">
+                    <div class="date_line">
+                      <div class="inner">
+                        <div class="cell date">
+                           2019年2月11日（祝日・月曜） 1回東京5日
+                        </div>
+                        <div class="cell time">発走時刻：<strong>15時45分</strong></div>
+                        <div class="cell baba">
+                          <ul>
+                            <li class="weather"><span class="inner"><span class="cap">天候</span><span class="txt">曇</span></span></li>
+
+                            <li class="turf">
+                              <span class="inner">
+                                <span class="cap">芝</span>
+                                <span class="txt">良</span>
+                              </span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="race_title">
+                      <div class="inner">
+                        <div class="num">
+                          <div class="num_wrap">
+                            <div class="race_number">
+                              <img src="/JRADB/img/race_number_main/race_num_11.png" alt="11レース">
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <div class="txt">
+                          <h2>
+                            <span class="main">
+
+                              <span class="cap"><span class="num">第54回 </span></span>
+
+                              <span class="race_name">
+                                デイリー杯クイーンカップ<span class="grade_icon lg"><img src="/JRADB/img/grade/icon_grade_g3.png" alt="G&#8546;"></span>
+                              </span>
+                            </span>
+                          </h2>
+                          <div class="type">
+                            <div class="cell category">サラ系3歳</div>
+                            <div class="cell class">オープン</div>
+                            <div class="cell rule">（国際）牝（特指）</div>
+                            <div class="cell weight">別定</div>
+
+                            <div class="cell course"><span class="cap">コース：</span>1,600<span class="unit">メートル</span><span class="detail">（芝・左）</span></div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="prize">
+
+                      <li>
+                        <div class="prize_unit">
+                          <div class="cell cap">本賞金<span class="unit">（万円）</span></div>
+                          <div class="cell data">
+                            <ol>
+                              <li><span class="cap">1着</span><span class="num">3,500</span></li><li><span class="cap">2着</span><span class="num">1,400</span></li><li><span class="cap">3着</span><span class="num">880</span></li><li><span class="cap">4着</span><span class="num">530</span></li><li><span class="cap">5着</span><span class="num">350</span></li>
+                            </ol>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li><div class="prize_unit"><div class="cell cap">付加賞<span class="unit">（万円）</span></div><div class="cell data"><ol><li><span class="cap">1着</span><span class="num">32.9</span></li><li><span class="cap">2着</span><span class="num">9.4</span></li><li><span class="cap">3着</span><span class="num">4.7</span></li></ol></div></div></li>
+                    </ul>
+                  </div>
+                                  </div>
+
+                <div class="race_header_movie_area">
+                  <div class="inner">
+                    <div class="cell mov">
+
+                      <div class="movie_line">
+                        <div class="cap"><strong>レース映像</strong></div>
+                        <div class="btn_block">
+
+<a href="#" id="btn_player_201901050511" onclick="eqPlayertag('201901050511'); return false;" class="btn-def btn-sm green btn-block"><i class="fa fa-video-camera" aria-hidden="true"></i>PLAY</a>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col" class="place">着順</th>
+                  <th scope="col" class="waku">枠</th>
+                  <th scope="col" class="num">馬番</th>
+                  <th scope="col" class="horse">馬名</th>
+                  <th scope="col" class="age">性齢</th>
+                  <th scope="col" class="weight">負担重量</th>
+                  <th scope="col" class="jockey">騎手</th>
+                  <th scope="col" class="time">タイム</th>
+                  <th scope="col" class="margin">着差</th>
+                  <th scope="col" class="corner">コーナー<span>通過順位</span></th>
+
+                  <th scope="col" class="f_time">推定上り</th>
+
+                  <th scope="col" class="h_weight">馬体重<span>（増減）</span></th>
+                  <th scope="col" class="trainer">調教師</th>
+                  <th scope="col" class="pop">単勝人気</th>
+                </tr>
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td class="place">1</td>
+                  <td class="waku"><img src="/JRADB/img/waku/8.png" alt="枠8桃"></td>
+                  <td class="num">9</td>
+                  <td class="horse">
+
+                    クロノジェネシス
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">55.0</td>
+
+                  <td class="jockey">北村 友一</td>
+
+                  <td class="time">1:34.2</td>
+
+                  <td class="margin"></td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">6</li>
+
+                        <li title="4コーナー通過順位">6</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">33.1</td>
+
+                  <td class="h_weight">
+
+                    438<span>(+2)</span>
+
+                  </td>
+
+                  <td class="trainer">斉藤 崇史</td>
+
+                  <td class="pop">1</td>
+                </tr>
+
+                <tr>
+                  <td class="place">2</td>
+                  <td class="waku"><img src="/JRADB/img/waku/6.png" alt="枠6緑"></td>
+                  <td class="num">6</td>
+                  <td class="horse">
+
+                    ビーチサンバ
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">54.0</td>
+
+                  <td class="jockey">福永 祐一</td>
+
+                  <td class="time">1:34.2</td>
+
+                  <td class="margin">クビ</td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">9</li>
+
+                        <li title="4コーナー通過順位">8</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">32.9</td>
+
+                  <td class="h_weight">
+
+                    476<span>(+8)</span>
+
+                  </td>
+
+                  <td class="trainer">友道 康夫</td>
+
+                  <td class="pop">2</td>
+                </tr>
+
+                <tr>
+                  <td class="place">3</td>
+                  <td class="waku"><img src="/JRADB/img/waku/4.png" alt="枠4青"></td>
+                  <td class="num">4</td>
+                  <td class="horse">
+
+                    ジョディー
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">54.0</td>
+
+                  <td class="jockey">武藤 雅</td>
+
+                  <td class="time">1:34.3</td>
+
+                  <td class="margin">１／２</td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">1</li>
+
+                        <li title="4コーナー通過順位">1</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">33.9</td>
+
+                  <td class="h_weight">
+
+                    476<span>(+4)</span>
+
+                  </td>
+
+                  <td class="trainer">戸田 博文</td>
+
+                  <td class="pop">7</td>
+                </tr>
+
+                <tr>
+                  <td class="place">4</td>
+                  <td class="waku"><img src="/JRADB/img/waku/7.png" alt="枠7橙"></td>
+                  <td class="num">7</td>
+                  <td class="horse">
+
+                    カレンブーケドール
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">54.0</td>
+
+                  <td class="jockey">戸崎 圭太</td>
+
+                  <td class="time">1:34.4</td>
+
+                  <td class="margin">クビ</td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">4</li>
+
+                        <li title="4コーナー通過順位">4</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">33.6</td>
+
+                  <td class="h_weight">
+
+                    466<span>(-4)</span>
+
+                  </td>
+
+                  <td class="trainer">国枝 栄</td>
+
+                  <td class="pop">4</td>
+                </tr>
+
+                <tr>
+                  <td class="place">5</td>
+                  <td class="waku"><img src="/JRADB/img/waku/2.png" alt="枠2黒"></td>
+                  <td class="num">2</td>
+                  <td class="horse">
+
+                    レッドベルディエス
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">54.0</td>
+
+                  <td class="jockey">F.ブロンデル</td>
+
+                  <td class="time">1:34.7</td>
+
+                  <td class="margin">１ 3/4</td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">4</li>
+
+                        <li title="4コーナー通過順位">4</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">33.8</td>
+
+                  <td class="h_weight">
+
+                    452<span>(+12)</span>
+
+                  </td>
+
+                  <td class="trainer">鹿戸 雄一</td>
+
+                  <td class="pop">5</td>
+                </tr>
+
+                <tr>
+                  <td class="place">6</td>
+                  <td class="waku"><img src="/JRADB/img/waku/1.png" alt="枠1白"></td>
+                  <td class="num">1</td>
+                  <td class="horse">
+
+                    <span class="horse_icon"><img src="/JRADB/img/kigo/maru-gai.png" alt="マルガイ"></span>マドラスチェック
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">54.0</td>
+
+                  <td class="jockey">大野 拓弥</td>
+
+                  <td class="time">1:34.7</td>
+
+                  <td class="margin">クビ</td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">2</li>
+
+                        <li title="4コーナー通過順位">2</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">34.0</td>
+
+                  <td class="h_weight">
+
+                    502<span>(0)</span>
+
+                  </td>
+
+                  <td class="trainer">斎藤 誠</td>
+
+                  <td class="pop">6</td>
+                </tr>
+
+                <tr>
+                  <td class="place">7</td>
+                  <td class="waku"><img src="/JRADB/img/waku/8.png" alt="枠8桃"></td>
+                  <td class="num">8</td>
+                  <td class="horse">
+
+                    マジックリアリズム
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">54.0</td>
+
+                  <td class="jockey">F.ミナリク</td>
+
+                  <td class="time">1:34.8</td>
+
+                  <td class="margin">３／４</td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">7</li>
+
+                        <li title="4コーナー通過順位">8</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">33.5</td>
+
+                  <td class="h_weight">
+
+                    448<span>(+16)</span>
+
+                  </td>
+
+                  <td class="trainer">尾関 知人</td>
+
+                  <td class="pop">8</td>
+                </tr>
+
+                <tr>
+                  <td class="place">8</td>
+                  <td class="waku"><img src="/JRADB/img/waku/3.png" alt="枠3赤"></td>
+                  <td class="num">3</td>
+                  <td class="horse">
+
+                    ミリオンドリームズ
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">54.0</td>
+
+                  <td class="jockey">C.ルメール</td>
+
+                  <td class="time">1:34.9</td>
+
+                  <td class="margin">１／２</td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">2</li>
+
+                        <li title="4コーナー通過順位">2</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">34.3</td>
+
+                  <td class="h_weight">
+
+                    510<span>(0)</span>
+
+                  </td>
+
+                  <td class="trainer">藤沢 和雄</td>
+
+                  <td class="pop">3</td>
+                </tr>
+
+                <tr>
+                  <td class="place">9</td>
+                  <td class="waku"><img src="/JRADB/img/waku/5.png" alt="枠5黄"></td>
+                  <td class="num">5</td>
+                  <td class="horse">
+
+                    <span class="horse_icon"><img src="/JRADB/img/kigo/kaku-chi.png" alt="カクチ"></span>アークヴィグラス
+
+                  </td>
+                  <td class="age">牝3</td>
+                  <td class="weight">55.0</td>
+
+                  <td class="jockey">瀧川 寿希也</td>
+
+                  <td class="time">1:37.0</td>
+
+                  <td class="margin">大差</td>
+
+                  <td class="corner">
+                    <div class="corner_list">
+
+                      <ul>
+
+                        <li title="3コーナー通過順位">7</li>
+
+                        <li title="4コーナー通過順位">6</li>
+
+                      </ul>
+
+                    </div>
+                  </td>
+                  <td class="f_time">35.9</td>
+
+                  <td class="h_weight">
+
+                    436<span>(-7)</span>
+
+                  </td>
+
+                  <td class="trainer">嶋田 幸晴</td>
+
+                  <td class="pop">9</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <div class="result_time_data mt10">
+              <table class="basic narrow">
+                <caption class="simple title-s">
+                  <div class="inner">
+                    <div class="main">タイム</div>
+                  </div>
+                </caption>
+                <tbody class="th_left td_left">
+
+                  <tr>
+                    <th scope="row">ハロンタイム</th>
+                    <td>12.7 - 11.5 - 11.9 - 12.3 - 12.0 - 11.5 - 11.0 - 11.3</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">上り</th>
+                    <td>4F  45.8 - 3F  33.8</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="result_corner_place mt10">
+              <table class="basic narrow">
+                <caption class="simple title-s">
+                  <div class="inner">
+                    <div class="main">コーナー通過順位</div>
+                  </div>
+                </caption>
+                <tbody class="th_left td_left">
+
+                  <tr>
+                    <th scope="row">3コーナー</th>
+                    <td>4(1,3)(2,7)<strong>9</strong>(5,8)6 </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">4コーナー</th>
+                    <td>4(1,3)(2,7)(5,<strong>9</strong>)(8,6) </td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+
+            <div class="refund_area mt30">
+              <div class="block_header"><div class="content"><h2>払戻金</h2></div></div>
+              <div class="refund_unit mt15">
+                <div class="left">
+                  <ul>
+                <li class="win">
+                  <dl>
+                    <dt>単勝</dt>
+                    <dd>
+                      <span class="line">
+                        <span class="num">9</span>
+                        <span class="yen">210<span class="unit">円</span></span>
+                        <span class="pop">1<span>番人気</span></span>
+                      </span>
+                    </dd>
+                  </dl>
+                </li>
+
+                <li class="place">
+                  <dl>
+                    <dt>複勝</dt>
+                    <dd>
+                      <span class="line">
+                        <span class="num">9</span>
+                        <span class="yen">110<span class="unit">円</span></span>
+                        <span class="pop">1<span>番人気</span></span>
+                      </span>
+                      <span class="line">
+                        <span class="num">6</span>
+                        <span class="yen">120<span class="unit">円</span></span>
+                        <span class="pop">2<span>番人気</span></span>
+                      </span>
+                      <span class="line">
+                        <span class="num">4</span>
+                        <span class="yen">340<span class="unit">円</span></span>
+                        <span class="pop">7<span>番人気</span></span>
+                      </span>
+                    </dd>
+                  </dl>
+                </li>
+
+                  </ul>
+                </div>
+                <div class="center">
+                  <ul>
+                <li class="wakuren">
+                  <dl>
+                    <dt>枠連</dt>
+                    <dd>
+                      <span class="line">
+                        <span class="num">6-8</span>
+                        <span class="yen">260<span class="unit">円</span></span>
+                        <span class="pop">1<span>番人気</span></span>
+                      </span>
+                    </dd>
+                  </dl>
+                </li>
+
+                <li class="wide">
+                  <dl>
+                    <dt>ワイド</dt>
+                    <dd>
+                      <span class="line">
+                        <span class="num">6-9</span>
+                        <span class="yen">160<span class="unit">円</span></span>
+                        <span class="pop">1<span>番人気</span></span>
+                      </span>
+                      <span class="line">
+                        <span class="num">4-9</span>
+                        <span class="yen">790<span class="unit">円</span></span>
+                        <span class="pop">11<span>番人気</span></span>
+                      </span>
+                      <span class="line">
+                        <span class="num">4-6</span>
+                        <span class="yen">780<span class="unit">円</span></span>
+                        <span class="pop">10<span>番人気</span></span>
+                      </span>
+                    </dd>
+                  </dl>
+                </li>
+
+                  </ul>
+                </div>
+                <div class="right">
+                  <ul>
+                <li class="umaren">
+                  <dl>
+                    <dt>馬連</dt>
+                    <dd>
+                      <span class="line">
+                        <span class="num">6-9</span>
+                        <span class="yen">260<span class="unit">円</span></span>
+                        <span class="pop">1<span>番人気</span></span>
+                      </span>
+                    </dd>
+                  </dl>
+                </li>
+
+                <li class="umatan">
+                  <dl>
+                    <dt>馬単</dt>
+                    <dd>
+                      <span class="line">
+                        <span class="num">9-6</span>
+                        <span class="yen">420<span class="unit">円</span></span>
+                        <span class="pop">1<span>番人気</span></span>
+                      </span>
+                    </dd>
+                  </dl>
+                </li>
+
+                <li class="trio">
+                  <dl>
+                    <dt>３連複</dt>
+                    <dd>
+                      <span class="line">
+                        <span class="num">4-6-9</span>
+                        <span class="yen">1,820<span class="unit">円</span></span>
+                        <span class="pop">5<span>番人気</span></span>
+                      </span>
+                    </dd>
+                  </dl>
+                </li>
+
+                <li class="tierce">
+                  <dl>
+                    <dt>３連単</dt>
+                    <dd>
+                      <span class="line">
+                        <span class="num">9-6-4</span>
+                        <span class="yen">4,850<span class="unit">円</span></span>
+                        <span class="pop">13<span>番人気</span></span>
+                      </span>
+                    </dd>
+                  </dl>
+                </li>
+
+                  </ul>
+                </div>
+              </div>
+
+            </div><!-- /[.refund_area] -->
+
+<!-- 競走結果 貼り付け ここまで -->
+
+
+
+            <div class="race_photo_area">
+              <ul>
+
+                <li><span></span><img src="/JRADB/jpg/2019/05/201901050511A.jpg" alt="ゴール前写真"></li>
+
+              </ul>
+            </div>
+
+
+</div><!-- /[#race_result_unit] -->
+
+</div><!-- /[#race_result] -->
+
+
+</div><!-- /[#contentsBody] -->
+
+</div><!-- /[#contents] -->
+
+<div id="footer">
+<div class="container">
+<div class="icon"></div>
+<div class="content">
+<div class="copyright">Copyright &copy; Japan Racing Association All rights reserved.</div>
+</div><!-- /[.content] -->
+</div><!-- /[.container] -->
+</div><!-- /[#footer] -->
+
+<script type="text/javascript" src="//rthorse.jra.go.jp/bcx/rt_tag.js"></script>
+<script type="text/javascript">
+<!--
+function click_send(s) {
+  bcxBeacon.addQuery("bcx=1");
+  bcxBeacon.setAltName(s);
+  bcxBeacon.send();
+}
+// -->
+</script>
+<script type="text/javascript">
+  bcxBeacon.addQuery("bcx=1");
+  bcxBeacon.send();
+</script>
+
+<!-- /[wrapper] --></div>
+
+<form id="commForm01" method="POST" enctype="application/x-www-form-urlencoded" style="margin-top:0em; margin-bottom:0em"><input type="hidden" id="cname" name="cname" ></form>
+<form id="commFormSearch" method="POST" enctype="application/x-www-form-urlencoded" style="margin-top:0em; margin-bottom:0em"><input type="hidden" id="cnameSearch" name="CNAME" ><input type="hidden" id="expire" name="EXPIRE" ><input type="hidden" id="parm" name="xW02" ></form>
+</body>
+</html>
